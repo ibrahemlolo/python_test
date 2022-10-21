@@ -1,0 +1,115 @@
+# -----variabels-----
+
+name = "ibrahem lolo"  # normal
+myName = "ibrahem lolo"  # camelCase
+my_name = "ibrahem lolo"  # snake_case
+
+#    print(name) print (myName) print (my_name)
+
+# x=10 ----> x= "string value"
+
+
+# -------escape sequences charcter-------
+
+# \b back space
+print("I get this back\bslash ")
+
+# \ escape for new line
+print(
+    "i \
+love \
+python"
+)
+
+# \\ escape that back slash
+print("i love this charcter \\")
+
+# \ escape singal and multe quotes
+print("i love multe qoutes \"\" and singel qoutes '' ")
+
+# \n new line
+print("go to \nnew line")
+print("go to \nnew line")
+
+# \r carriage \t tap \xxh charcter hax value
+########################################################################
+
+#indexing (access singel value)
+
+name = "i love python"
+
+print(name[5])
+
+#access singel value from the end
+
+print(name)
+
+#slicing (Access Multiple Sequence Items)
+################print([start:end:foot_size])##################
+print (name[0::2])
+
+##########################################################################
+--------------------------String method
+ALL METHOD HAVE () AFTER IT TO WORK
+#strip #rstrip #lstrip
+
+string_name.strip("intered_value")
+string_name.lstrip("intered_value")
+string_name.rstrip("intered_value")
+
+#title
+formating a string text as first charcter in upper
+string_name.title()
+
+#zfill
+optamize number in same format by add 0 in left 
+string_name.zfill(intered_value)
+
+#upper #lower
+
+$important method----# split("intered_value") 
+
+    look at that
+    a="i love lenovo land "
+    b=a.split()
+    for i in b:
+       print(len(i))
+
+#center(number return, whats add ) 
+a= "ibrahem"
+print(a.center(15,"#"))
+-> ####ibrahem####
+
+#count(entered_value,start_index,end_index)
+
+#swapcase()
+swich case for each word from upper to smaller and vice versa
+
+#startswith(entered_value,start_index,end_index) #endswith(entered_value,start_index,end_index) #return boolian value
+
+#index(sub_string,start,end)---->if false return error--break run--
+
+#find(sub_string,start,end)---->if false return [-1]
+
+#rjust(int,charcter) #ljust(int,charcter)
+
+#spiltlines()---->reurn list of line
+
+#expandtaps(int)
+
+-----boolian method---->
+#istitle()
+#isspace()
+#islower()
+#isidentifier()-----return boolian value for if i can nameing a variabels 
+#isalpha()-----return if input is alphabit only
+#isalnum()-----mix of num and alphabit or just once of them
+---------------------------
+
+#replace(value_to_replace,replaced_value,count_of_replace)
+
+####join###
+a=["ibrahem","g","lolo"]
+print("-".join(a))
+----->ibrahem-g-lolo
+

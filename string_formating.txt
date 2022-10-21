@@ -1,0 +1,42 @@
+##---old way
+like c# ---->
+
+to concatenate str to  num
+
+we use place holder --->
+a="ibrahem"
+s =25
+print("my name is %s and i am %d years old" %(a,s))  
+###---%s string %d diget %f floting---###
+to control value do that : %.2f --->print two value after ,
+                           %.5s --->print 5 value of string
+
+##---new way
+we use {} to get place holder
+print("my name is {} and i am {} years old" .format(a,s))
+print("my name is {:s} and i am {:d} years old" .format(a,s))
+to control value do that : {:.2f} --->print two value after ,
+                           {:.5s} --->print 5 value of string
+
+#formating for money
+money= 12000000
+print("my money in bank = {:,d}.format(money))
+
+#reArrange items
+a="one"
+b="two"
+c="three"
+
+print ("down to up ={}, {}, {}".format(a,b,c))
+print ("up to down ={2}, {1}, {0}".format(a,b,c))
+-----------####---useful advise---####----------
+{index of variable':.'number to view'--format}
+{2:.3f}
+{2:.15d}
+
+--------------------version 3.6--------------------
+name = "ibrahem"
+age = "25"
+
+print("my name is {name} and my age is {age}")
+print(f"my name is {name} and my age is {age}")
