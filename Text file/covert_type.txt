@@ -1,0 +1,27 @@
+-----------COVERT FOR TYPE------------
+
+str()--------num------str
+
+
+tuple()--------list--------->Tuple
+       --------dict
+       --------set
+       --------str
+
+
+list()---------tuple--------->list
+       --------dict
+       --------set
+       --------str
+
+
+set()---------tuple----------->set
+       --------dict
+       --------list
+       --------str
+
+
+dict()---------list---------->dict
+       --------tuple
+       xxxxx---set---xxxxx
+       xxxxx---str---xxxxx

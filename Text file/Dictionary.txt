@@ -1,0 +1,44 @@
+-----------------------Dictionary------------------------
+
+user = {"name" : 'ibrahem',
+    "age" : 25,
+    'country' : 'syria',
+    'ibra' : 22 
+    }
+
+#---get one value from Dictionary
+print(user['country'])
+print(user.get('country))
+
+#---get all keys
+print(user.keys())
+
+#---get all values
+print(user.values())
+
+#---get value in dict into dict
+print(user['one']['ibra'])
+
+#---clear
+user.clear()
+
+#---update()
+user.update({'gender' : 'male'})
+
+#---ADD
+user['skills'] = 'xbox'
+
+#---copy()
+new_user= user.copy()
+
+#---setdefault
+print(user.setdefault("man","utd")) --->return key value if in or return utd
+
+#---popitems()
+print(user.popitems())---->return what latest add to dict
+
+#---items()
+new_user =user.items()
+
+#---fromkeys()---->to make dict from to list
+

@@ -1,0 +1,32 @@
+------------FILE-------------
+
+#----open
+file =open("ibra.txt")
+
+#----to read file content
+file =open("ibra.txt","r")
+print(file.read())
+print(file.readline())
+print(file.readlines())------return as list
+
+#----loop
+for line in file:
+   print(line)
+   if line.startswith("07")
+     break 
+
+#----close()
+file.close()
+
+#----open to write
+file= open("ibra.txt","w")
+file.write('')
+file.writelines(list_name)
+
+#----truncate
+file= open("ibra.txt","a")
+file.truncate(5)
+
+#----position
+print(file.tell())------return position
+file.seek()-------to put head of write on that position

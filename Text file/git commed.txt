@@ -1,0 +1,27 @@
+git init 
+---------------
+git config --global user.name ""
+git config --global user.email""
+---------------
+git remote add origin https://
+---------------
+git add .
+git commit -m ""
+---------------
+git log
+---------------
+git push origin master (link)
+---------------
+git clone http............ (link of the repo.)
+---------------
+to git lastest update:
+git pull origin master (or branch name instead of master)
+---------------
+git reset --hard
+---------------
+git branch
+git checkout -b (branch name)
+---------------
+to delet commit from websit
+git reset --soft HEAD~
+git push origin +master --force

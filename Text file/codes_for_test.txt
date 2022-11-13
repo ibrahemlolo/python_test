@@ -1,0 +1,113 @@
+#---print list like #1 is name
+
+a = ["ibra",'aziz','hamza','ola','khola']
+i=0
+while i < len(a) :
+    print(f"#{i+1} is {a[i]}")
+    i+=1
+
+
+#---print user name and domin name
+
+email= input("hi please input your Email ")
+#lname= input("hi please input your last name ")
+if email.find("@") and email.find(".") != -1 :
+    username=(email[:email.index('@')])
+    dominname=(email[email.index('@')+1:])
+    print(f"hello nice to meet you '{username}' and your DominName '{dominname}'")
+else : print('error in input ')
+
+
+#---pepol = {
+    "ibra":{"python":80 , "java": 50},
+    "hadi":{"java":80, "python": 50},
+    "aziz":{"c#":80 , "c+" : 80},
+    "jamel": {"css": 80, "php": 80}
+}
+for name in pepol :
+     print(f"studint {name} program language is:")
+     for i in pepol[name]:
+         print(f"{i}= {pepol[name][i]}")
+
+         
+#---x = "wwwoooorrllddd"
+
+def clean (world):
+   
+   if len (world) == 1 :
+      return world
+   if world[0] == world[1]:
+      return clean(world[1:])
+   return world[0] + clean(world[1:])
+
+
+print(clean(x))
+------------------FOR explain
+def clean (world):
+   
+   if len (world) == 1 :
+      print(world)
+      return world
+   
+   if world[0] == world[1]:
+      print(f"in convert {world}")
+      return clean(world[1:])
+   print(f"befor return:-------------- {world[0]}")
+   return world[0] + clean(world[1:])
+
+
+print(clean(x))
+
+#---n!
+print(6*5*4*3*2*1)
+def power (x):
+   if x == 0:
+      return 1
+   if x != 0 :
+      return x * power(x-1)
+
+print(power(6))
+
+#----lambda
+hello = lambda name :print(f"hello your name is {name}")
+
+hello ("man")
+
+#---map
+d = ['ibra', 'haidar', 'hamod', 'hamza', 'man', 'efasf']
+def format(name):
+    return f"--{name.capitalize().ljust(6,' ')}--"
+for i in map(format,d):
+    print(i)
+----with lambda----
+def format(name): return f"--{name.capitalize().ljust(6,' ')}--"
+
+for i in map(format,d):
+    print(i)
+
+#----filter
+man = [1, 23, 3, 12, 5]
+for i in filter(lambda man: man > 10, man):
+    print(i)
+
+
+#---generet 
+import random
+def gen_fun ():
+    for i in range (10) :
+        yield(random.randint(1,10))
+
+man = gen_fun()
+for i in range(10):
+    print(next(man))
+  
+
+#--------Time--------
+import Time
+
+def speed(func):
+    def real():
+    start = time ()
+    func()
+    end = time()
+    return real

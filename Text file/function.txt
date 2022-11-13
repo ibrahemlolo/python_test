@@ -1,0 +1,100 @@
+------------FUNCTION-------------
+
+
+def fun-name(parametrs):
+    fun-body
+    return 
+
+packing and unpacking for any parametrs in function defination:
+
+def fun-name(*args): -----> for unknowing number of arg 
+    -----
+    -----
+
+def fun-name (**args): ------> for unpacking a dict value
+    -----
+    -----
+##############################################################################
+
+#----Boolian built function
+all(a)------return true if all a element is true
+any(a)------return true if any a element is true 
+
+---------------Binary------------
+bin(100)-------------return binary value of 100
+id (a)---------------return binary id of var
+
+----------------------
+sum(a)---------return sum of a
+sum(a,40)------return sum of a and add 40 to sum
+
+round(num,num_digits)
+round(15.235)-----------return 15
+round(15.235,2)---------return 15.23
+
+------------------range(start,end,step)-----------------
+
+------------------print("",sep="",end"\n")------sep= defult char betwin massage
+                                                end= defult end for print function
+
+-------------------------------------------
+abs(-100)---------- |-100|=100
+
+pow(base,exp,mod)------pow(2,5)=32---pow(2,5,10)=2**5%10=2
+
+max()
+
+min()
+
+-----------------------MAP--------------------
+map(fun,eteraple)----------fun can be bredefin or define on the fly by lambda
+
+-----------------------filter-----------------
+filter(fun,eteraple)-------like map //but// filter fun must be true 
+
+-----------------------reduce-----------------
+reduce(fun,eteraole)-------fun can be bredefin or define on the fly by lambda
+///no function for reduce use loop in it : ((1+2) + 3)+4)....
+
+-----------------------enumerate----------------
+enumerate(eteraole,num)
+
+-----------------------reversed-----------------
+reversed(eteraole)
+
+-----------------------Dicorator----------------
+def dicorat(func):
+       
+    def fun_name():
+
+    print("befor")
+
+    func()
+
+    print("after")
+      
+    return fun_name
+
+--------------------------------------------------
+
+try:
+
+-------------code---------------
+
+except \can define any tupe of error/ :
+
+print("ther is an error here")
+###########
+except \can define any tupe of error/ :
+
+print("ther is an error here")
+###########
+else :
+
+-------continue the code---------
+
+finaly:
+
+-------excuted what ever think happend-------
+
+

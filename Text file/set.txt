@@ -1,0 +1,68 @@
+tuple = (1,2,3 ,11 ,97)
+Tuple2= "ibrahem","gafar", "lolo",3 ,11 ,97
+
+----Tuple Dont support edit----
+
+#---indexing
+print(Tuple[1])
+
+---------------------------Set--------------------------
+set={1, 4, "ibrahem", "lolo"}
+
+----Method----
+set {}
+set1 {}
+set2 {}
+
+#---union
+set add to set
+set.union(set1)
+set.union(set2,set3)
+set | set1
+
+#---add
+set.add(1)
+
+#---copy()
+s1=set.copy() ---->shalow copy
+
+#---remove()
+set.remove(1)---->if not exict return error
+
+#---discard()
+set.discard(1)---->if not exict no problem
+
+#---pop()
+set.pop()----->return random value
+
+#---update()
+set.update(set1)
+
+#---difference()
+set.difference(set1)---->return difference betwen tow set
+
+#---difference_update()
+set.difference_update()----->return set with update from set1
+
+#---intersection()
+set.intersection(set1)----->return what in set and in set1
+
+#---intersection_update()
+set.intersection_update(set1)
+
+#---symmetric_difference()
+set.symmetric_difference(set1)---->return what is not in set and set1
+
+#---symmetric_difference_update()
+set.symmetric_difference_update(set1)
+
+#---issuperset()
+set.issuperset(set1)----->true or false if set is super set for set1
+
+#---issubset()
+set.issubset(set1)----->true or false if set is sub set for set1
+
+#---isdisjoint()
+set.isdisjoint(set1)---->t or f if set and set1 not have any same value
+
+#---

@@ -1,0 +1,11 @@
+#-------import os 
+
+os.getcwd()-----current work dirctory
+
+os.path.abspath(__file__)-----path of the opened path
+
+os.path.dirname(os.path.abspath(__file__))----return name of file opened
+
+os.chdir("")-----to change path to new dirctory
+
+os.remove("file_name")
